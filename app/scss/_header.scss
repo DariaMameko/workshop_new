@@ -1,0 +1,147 @@
+.header {
+  width: 100%;
+  height: 80px;
+  background-color: #343334;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  &__logo {
+    width: 93px;
+    height: 33px;
+    margin: 0 6.67% 0 16.5%;
+    background-image: url("../images/logo.png");
+  }
+
+  &-menu {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    width: 37%;
+    height: 100%;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    
+    &-item {
+      height: 16px;
+      padding: 0 17px 0 17px;
+      box-sizing: content-box;
+      text-transform: uppercase;
+      font-size: 0.75em;
+      color: #ffffff;
+      border-left: 1px solid #575757;
+      border-right: 1px solid #808080;
+      text-align: center;
+    }
+
+    &-item:first-of-type {
+      padding: 0 17px 0 0;
+      border-right: 1px solid #808080;
+      border-left: 0;
+    }
+
+    &-item:last-of-type {
+      padding: 0 0 0 17px;
+      border-right: 0;
+      border-left: 1px solid #575757;
+    }
+  }
+
+  &__globe {
+    width: 26px;
+    height: 26px;
+    background-image: url("../images/globe.png");
+    margin: 0 2.1% 0 5.8%;
+  }
+
+  &__search {
+    width: 26px;
+    height: 26px;
+    background-image: url("../images/search.png");
+    margin: 0 2.14% 0 0;
+  }
+
+  &__menu_dropdown {
+    width: 5.88%;
+    border: 1px solid #ffffff;
+    height: 39px;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+
+  .header {
+    
+    &-menu {
+
+      &-item {
+
+        font-size: 1em;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .header {
+
+    &__logo {
+      margin: 0 6.67% 0 5%;
+    }
+
+    &-menu {
+      width: 55%;
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+
+    &-menu {
+      display: none;
+    }
+
+    &__globe {
+      margin: 0 0 0 54%;
+    }
+
+    &__search {
+      margin: 0 2.14% 0 2.14%;
+    }
+
+    &__menu_dropdown {
+      width: 10%;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    width: 100%;
+    &__globe {
+      margin: 0 0 0 45%;
+    }
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .header {
+    width: 100%;
+    &__globe {
+      margin: 0 0 0 15%;
+    }
+
+    &__menu_dropdown {
+      width: 20%;
+    }
+  }
+}

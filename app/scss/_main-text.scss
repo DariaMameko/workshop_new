@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "Cutive";
+  src: url("../fonts/CutiveMono-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Major";
+  src: url("../fonts/Almendra-Italic.ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+
+.content-text {
+  width: 64.9%;
+  height: 450px;
+  background-color: #fff;
+  font-family: "Cutive";
+  margin: 0 0 0 16.67%;
+
+  &_head {
+    display: block;
+    margin-top: 38px;
+    font-family: "Cutive";
+    font-size: 16px;
+  }
+
+  &_main {
+    margin: 136px 0 0 0;
+    width: 100%;
+
+    &-head {
+      font-size: 70px;
+      text-align: center;
+    }
+
+    &-text {
+      font-size: 16px;
+      text-align: center;
+      font-weight: 600;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content-text {
+    &_main {
+      &-head {
+        font-size: 30px;
+      }
+    }
+  }
+}

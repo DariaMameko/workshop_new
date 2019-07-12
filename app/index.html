@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body class="wrapper">
+  <header class="header">
+    <div class="header__logo">
+      <a class="header__logo_link"></a>
+    </div>
+    <ul class="header-menu">
+      <li class="header-menu-item">
+        <a class="header-menu-item__link link">What we do</a>
+      </li>
+      <li class="header-menu-item">
+        <a class="header-menu-item__link link">How we do it</a>
+      </li>
+      <li class="header-menu-item">
+        <a class="header-menu-item__link link">Our work</a>
+      </li>
+      <li class="header-menu-item">
+        <a class="header-menu-item__link link">Insights</a>
+      </li>
+      <li class="header-menu-item">
+        <a class="header-menu-item__link link">About</a>
+      </li>
+      <li class="header-menu-item">
+        <a class="header-menu-item__link link">Careers</a>
+      </li>
+    </ul>
+    <div class="header__globe">
+      <a class="header__globe_link link"></a>
+    </div>
+    <div class="header__search">
+      <a class="header__search_link link"></a>
+    </div>
+    <div class="header__menu_dropdown">
+      <a class="header__menu_dropdown_link link">Menu +</a>
+    </div>
+  </header>
+  <main class="content">
+    <article class="content-text">
+      <span class="content-text_head">Home > Our work</span>
+      <p class="content-text_main">
+        <h1 class="content-text_main-head">Insights</h1>
+        <p class="content-text_main-text">Explore the ideas that inspire our teams and shape their perspectives.</p>
+      </p>
+    </article>
+    <section class="content-cards">
+      <div class="card content-card">
+        <img class="card__image content-card__image" src="images/1-main.jpg">
+        <h3 class="content-card__head">Mobile China: WeChat Strategy for Retail Brands</h3>
+        <p class="content-card__text_author">
+          Author 1 Name, Job Title<br><br>
+          Author 2 Name, Job Title
+        </p>
+        <span class="content-card__block">
+          Mar 7, 2017
+        </span>
+        <ul class="content-card_menu">
+          <li class="content-card_menu-item content-card_menu-item_big">White paper</li>
+          <li class="content-card_menu-item content-card_menu-item_small">Retail</li>
+        </ul>
+      </div>
+      <div class="card content-card">
+        <img class="card__image content-card_first" src="images/2-main.jpg">
+        <h3 class="content-card__head">Hospital Room of the Future: IoT in <br> Everyday Healthcare</h3>
+        <p class="content-card__text_author">
+          Eladio Alvarez, Head of Healthcare Solutions<br>and Business Development
+        </p>
+        <span class="content-card__block">
+          Mar 7, 2017
+        </span>
+        <ul class="content-card_menu">
+          <li class="content-card_menu-item content-card_menu-item_small">Blog</li>
+          <li class="content-card_menu-item content-card_menu-item_big">Healthcare</li>
+        </ul>
+      </div>
+    </section>
+    <section class="content-filter">
+      <div class="filter">
+        <p class="filter-head">Filter by</p>
+        <div class="filter-wrapper filter-wrapper_first">
+          <div class="filter-input">
+            <select class="filter-select" id="doing-filter">
+              <option value="filter-card" class="filter-item">
+                All what we do
+              </option>
+              <option value="main" class="main">
+                Main theme
+              </option>
+              <option value="other" class="other">
+                Other themes
+              </option>
+            </select>
+            <div class="filter-arrow"></div>
+          </div>
+        </div>
+        <div class="filter-input">
+          <div class="filter-wrapper">
+            <select class="filter-select" id="content-filter">
+              <option class="filter-item" value="filter-card">
+                All content types
+              </option>
+              <option value="first" class="first">
+                Main themes
+              </option>
+              <option value="second" class="second">
+                Other themes
+              </option>
+            </select>
+            <div class="filter-arrow"></div>
+          </div>
+        </div>
+      </div>
+
+      <section class="filter-cards" id="items">
+        <div class="filter-card main first">
+          <img class="filter-card__image" src="images/1.png">
+          <h4 class="filter-card__head">Project name</h4>
+          <span class="filter-card__text">Client</span>
+        </div>
+        <div class="filter-card other first">
+          <img class="filter-card__image" src="images/2.png">
+          <h4 class="filter-card__head">Redesigning a Leading<br> Innovative Platform to Unlock <br>the Power of Collaboration</h4>
+          <span class="filter-card__text">Client</span>
+        </div>
+        <div class="filter-card main first">
+          <img class="filter-card__image" src="images/3.png">
+          <h4 class="filter-card__head">Project name</h4>
+          <span class="filter-card__text">Client</span>
+        </div>
+        <div class="filter-card other second">
+          <img class="filter-card__image" src="images/4.png">
+          <h4 class="filter-card__head">Project name</h4>
+          <span class="filter-card__text">Client</span>
+        </div>
+        <div class="filter-card other second">
+          <img class="filter-card__image" src="images/5.png">
+          <h4 class="filter-card__head">Client Name that <br>is Long will Wrap</h4>
+          <span class="filter-card__text">Client</span>
+        </div>
+        <div class="filter-card main second">
+          <img class="filter-card__image" src="images/6.png">
+          <h4 class="filter-card__head">Project name</h4>
+          <span class="filter-card__text">Client</span>
+        </div>
+        <div class="filter-card other second">
+          <img class="filter-card__image" src="images/7.png">
+          <h4 class="filter-card__head filter-card__head_white">Project name</h4>
+          <span class="filter-card__text filter-card__text_white">Client</span>
+        </div>
+        <div class="filter-card other second">
+          <img class="filter-card__image" src="images/8.png">
+          <h4 class="filter-card__head filter-card__head_white">Client Name that <br> is Long will Wrap</h4>
+          <span class="filter-card__text filter-card__text_white">Client</span>
+        </div>
+        <div class="filter-card main first">
+          <img class="filter-card__image" src="images/9.png">
+          <h4 class="filter-card__head filter-card__head_white filter-card__head_white_last">Project name</h4>
+          <span class="filter-card__text filter-card__text_white filter-card__text_white_last">Client</span>
+        </div>
+      </section>
+      <div class="content-filter-view">
+        <a class="content-filter-view_link" href="#">View more</a>
+      </div>
+    </section>
+    <section class="content-block_help">
+      <h2 class="content-block_help__head">Hello, how can we help you?</h2>
+      <div class="content-block_help-block">
+        <div class="content-block_help-block-info">
+          <span class="content-block_help-block-info_text content-block_help-block-info_blue">Bacome a client</span>
+          <span class="content-block_help-block-info_text content-block_help-block-info_black">sales@epam.com</span>
+          <span class="content-block_help-block-info__text">000-000-0000</span>
+        </div>
+        <div class="content-block_help-block-info">
+          <span class="content-block_help-block-info_text content-block_help-block-info_blue">Find a job</span>
+          <span class="content-block_help-block-info_text content-block_help-block-info_black">Careers@epam.com</span>
+          <span class="content-block_help-block-info__text">000-000-0000</span>
+        </div>
+        <div class="content-block_help-block-info">
+          <span class="content-block_help-block-info_text content-block_help-block-info_text content-block_help-block-info_blue">Media relations</span>
+          <span class="content-block_help-block-info_text content-block_help-block-info_text content-block_help-block-info_black">Media@epam.com</span>
+          <span class="content-block_help-block-info__text">000-000-0000</span>
+        </div>
+        <div class="content-block_help-block-info">
+          <span class="content-block_help-block-info_text content-block_help-block-info_blue">Investor relations</span>
+          <span class="content-block_help-block-info_text content-block_help-block-info_black">Media@epam.com</span>
+          <span class="content-block_help-block-info__text">000-000-0000</span>
+        </div>
+        <div class="content-block_help-block-info content-block_help-block-info_another">
+          <span class="content-block_help-block-info_text content-block_help-block-info_blue">Ask a question</span>
+          <span class="content-block_help-block-info_text content-block_help-block-info_black">Ask@epam.com</span>
+          <span class="content-block_help-block-info__text">000-000-0000</span>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <p class="container__head">Our offices</p>
+      <ul class="container-menu">
+        <li class="container-menu-item">
+          <a class="container-menu-item__link container-menu-item__link_none">
+            Americas
+          </a>
+        </li>
+        <li class="container-menu-item">
+          <a class="container-menu-item__link">
+            Asia
+          </a>
+        </li>
+        <li class="container-menu-item">
+          <a class="container-menu-item__link">
+            Australia
+          </a>
+        </li>
+        <li class="container-menu-item">
+          <a class="container-menu-item__link container-menu-item__link_blue">
+            Europe
+          </a>
+        </li>
+      </ul>
+      <div class="slider">
+        <div class="slider__wrapper">
+          <div class="slider__item">
+            <div class="slider__content">
+              <div class="slider__content_header">
+                <img class="slider__content_img" src="images/slide1.png" alt="">
+                <span class="slider__content_section">Country</span>
+              </div>
+            </div>
+          </div>
+          <div class="slider__item">
+            <div class="slider__content">
+              <div class="slider__content_header">
+                <img class="slider__content_img" src="images/slide2.png" alt="">
+                <span class="slider__content_section">Country</span>
+              </div>
+            </div>
+          </div>
+          <div class="slider__item">
+            <div class="slider__content">
+              <div class="slider__content_header">
+                <img class="slider__content_img" src="images/slode3.png" alt="">
+                <span class="slider__content_section">Country</span>
+              </div>
+            </div>
+          </div>
+          <div class="slider__item">
+            <div class="slider__content">
+              <div class="slider__content_header">
+                <img class="slider__content_img" src="images/slide4.png" alt="">
+                <span class="slider__content_section">Country</span>
+              </div>
+            </div>
+          </div>
+          <div class="slider__item">
+            <div class="slider__content">
+              <div class="slider__content_header">
+                <img class="slider__content_img" src="images/slide1.png" alt="">
+                <span class="slider__content_section">Country</span>
+              </div>
+            </div>
+          </div>
+          <div class="slider__item">
+            <div class="slider__content">
+              <div class="slider__content_header">
+                <img class="slider__content_img" src="images/slide2.png" alt="">
+                <span class="slider__content_section">Country</span>
+              </div>
+            </div>
+          </div>
+          <div class="slider__item">
+            <div class="slider__content">
+              <div class="slider__content_header">
+                <img class="slider__content_img" src="images/slode3.png" alt="">
+                <span class="slider__content_section">Country</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="slider__control slider__control_left" href="#" role="button"></a>
+        <a class="slider__control slider__control_right" href="#" role="button"></a>
+      </div>    
+    </div>
+  </main>
+  <footer class="footer">
+    <p class="footer__info">
+        &copy; EPAM Systems, Inc. All Rights Reserved.
+    </p>
+    <ul class="footer-menu">
+      <li class="footer-menu-item">
+        <a class="footer-menu-item__link">Investors</a>
+      </li>
+      <li class="footer-menu-item">
+        <a class="footer-menu-item__link">Newsroom</a>
+      </li>
+      <li class="footer-menu-item">
+        <a class="footer-menu-item__link footer-menu-item__link_none">Contact</a>
+      </li>
+      <li class="footer-menu-item footer-menu-item_last">
+        <a class="footer-menu-item__link footer-menu-item__link footer-menu-item__link_display-none">
+          Open source
+        </a>
+      </li>
+    </ul>
+    <ul class="footer-menu_icons">
+      <li class="footer-menu_icons-item footer-menu_icons-item_twitter">
+        <a class="footer-menu_icons__link"></a>
+      </li>
+      <li class="footer-menu_icons-item footer-menu_icons-item_facebook">
+        <a class="footer-menu_icons__link"></a>
+      </li>
+      <li class="footer-menu_icons-item footer-menu_icons-item_linkedin">
+        <a class="footer-menu_icons__link"></a>
+      </li>
+      <li class="footer-menu_icons-item footer-menu_icons-item_google">
+        <a class="footer-menu_icons__link"></a>
+      </li>
+    </ul>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

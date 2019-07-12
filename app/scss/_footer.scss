@@ -1,0 +1,140 @@
+.footer {
+  width: 100%;
+  height: 80px;
+  background-color: #343233;
+  margin-top: 235px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  &__info {
+    padding: 0;
+    color: #fff;
+    font-weight: 100;
+    margin: 0 6.55% 0 17.5%;
+    font-size: 16px;
+  }
+
+  &-menu {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0 13.5% 0 0;
+
+    &-item {
+
+      &_last {
+        display: none;
+      }
+
+      &__link {
+        color: #fff;
+        text-transform: uppercase;
+        padding: 0 20px 0 20px;
+        border-right: 1px solid #fff;
+
+        &_none {
+          border-right: none;
+        }
+      }
+    }
+  }
+
+  &-menu_icons {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+
+    &-item {
+      margin: 0 10px 0 10px;
+
+      &_twitter {
+        background-image: url("../images/twitter.png");
+        width: 20px;
+        height: 17px;
+      }
+
+      &_facebook {
+        background-image: url("../images/facebook.png");
+        width: 10px;
+        height: 21px;
+      }
+
+      &_linkedin {
+        background-image: url("../images/linkedin.png");
+        width: 21px;
+        height: 21px;
+      }
+
+      &_google {
+        background-image: url("../images/google.png");
+        width: 26px;
+        height: 17px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .footer {
+
+    &__info {
+      margin: 0 6.55% 0 5%;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .footer {
+    height: 220px;
+    flex-direction: column-reverse;
+    justify-content: center;
+
+    &-menu {
+      margin: 0 0 30px 0;
+
+      &-item {
+
+        &_last {
+          display: block;
+        }
+
+        &__link {
+
+          &_none {
+            border-right: 1px solid #fff;
+          }
+
+          &_display-none {
+            border-right: 0;
+          }
+        }
+      }
+    }
+
+    &__info {
+      margin: 0;
+    }
+
+    &-menu_icons {
+      height: 50%;
+      margin-top: -30px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    &-menu {
+
+      padding: 0;
+      &-item {
+        font-size: 0.4em;
+      }
+    }
+  }
+}
